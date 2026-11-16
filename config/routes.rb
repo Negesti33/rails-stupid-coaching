@@ -11,4 +11,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  # root to: "questions#home" page d'acceuil
+  get "ask", to: "questions#ask"
+  get "answer", to: "questions#answer"
 end
